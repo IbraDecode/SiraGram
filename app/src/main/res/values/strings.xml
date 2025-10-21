@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SiraGram</string>
+    <string name="splash_text">Built By Ibra Decode With Sira Community</string>
+    <string name="about_text">© Sira Community 2025 — Crafted with Care &amp; Smart Technology</string>
+    <string name="settings_footer">SiraGram Engine v2.0 – Seamless, Secure, Smart</string>
+
+    <!-- Telegram API Configuration -->
+    <string name="telegram_api_id">21800647</string>
+    <string name="telegram_api_hash">f088e630dbf4a16cb89830f2e411f6af</string>
+    <string name="telegram_app_title">SiraGram</string>
+    <string name="telegram_short_name">SiraGram</string>
+</resources>

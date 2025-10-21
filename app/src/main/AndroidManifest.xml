@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sira.gram">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_full"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.activities.ChatActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.activities.ExploreActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.airbnb.lottie.LOTTIE_CACHE_DIR"
+            android:value="lottie_cache" />
+
+    </application>
+
+</manifest>

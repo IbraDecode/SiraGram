@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.sira.gram.app-mergeDebugResources-41:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "map": [
+                {
+                    "source": "/root/.gradle/caches/transforms-3/a2190cbf8bccbb29cd8ab23a68e52686/transformed/preference-1.2.0/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "71",
+                        "endOffsets": "122"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Account">
+        <Preference
+            android:key="account_settings"
+            android:title="Account Settings"
+            android:summary="Manage your account" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Privacy">
+        <SwitchPreferenceCompat
+            android:key="private_mode"
+            android:title="Private Mode"
+            android:summary="Enable private mode" />
+        <SwitchPreferenceCompat
+            android:key="anti_screenshot"
+            android:title="Anti Screenshot"
+            android:summary="Prevent screenshots" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Appearance">
+        <ListPreference
+            android:key="theme"
+            android:title="Theme"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="dark" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Security">
+        <Preference
+            android:key="two_step_verification"
+            android:title="Two-Step Verification"
+            android:summary="Enable two-step verification" />
+    </PreferenceCategory>
+</PreferenceScreen>
