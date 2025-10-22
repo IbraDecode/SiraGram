@@ -1,0 +1,11 @@
+*.zip
+android-sdk/
+gradle-8.0/
+app/build/
+backend/__pycache__/
+backend/routes/__pycache__/
+backend/tests/__pycache__/
+*.session
+*.log
+.idea/
+*.iml
