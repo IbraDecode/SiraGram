@@ -27,9 +27,9 @@
     </style>
     <style name="SplashTheme" parent="Theme.SiraGram">
         <item name="android:windowBackground">@drawable/splash_background</item>
-        <item name="android:statusBarColor">@color/deep_black</item>
+        <item name="android:statusBarColor">@color/electric_blue</item>
     </style>
-    <style name="Theme.SiraGram" parent="Theme.Material3.DayNight">
+    <style name="Theme.SiraGram" parent="Theme.Material3.Light">
         
         <item name="colorPrimary">@color/electric_blue</item>
         <item name="colorPrimaryVariant">@color/electric_blue</item>
@@ -41,8 +41,8 @@
         
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         
-        <item name="android:windowBackground">@color/deep_black</item>
-        <item name="android:textColorPrimary">@color/pure_white</item>
+        <item name="android:windowBackground">@color/pure_white</item>
+        <item name="android:textColorPrimary">@color/deep_black</item>
         <item name="android:textColorSecondary">@color/electric_blue</item>
     </style>
 </resources>

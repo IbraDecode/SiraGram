@@ -10,14 +10,31 @@ import com.sira.gram.models.Message
 class ApiService {
 
     private val client = OkHttpClient()
-    private val baseUrl = "http://64.227.177.25:8000" // Backend server URL
+    private val baseUrl = "http://10.0.2.2:8000" // Backend server URL for emulator
 
     fun sendOtp(phone: String, callback: (Boolean) -> Unit) {
-        val json = JSONObject().put("phone", phone).toString()
+        val request = Request.Builder()
+            .url("$baseUrl/auth/send_otp?phone=$phone")
+            .get()
+            .build()
+
+        client.newCall(request).enqueue(object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+                callback(false)
+            }
+
+            override fun onResponse(call: Call, response: Response) {
+                callback(response.isSuccessful)
+            }
+        })
+    }
+
+    fun verifyOtp(phone: String, code: String, callback: (Boolean) -> Unit) {
+        val json = JSONObject().put("phone", phone).put("code", code).toString()
         val body = json.toRequestBody("application/json".toMediaType())
 
         val request = Request.Builder()
-            .url("$baseUrl/auth/send_otp")
+            .url("$baseUrl/auth/verify_otp")
             .post(body)
             .build()
 

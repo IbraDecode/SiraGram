@@ -1,8 +1,9 @@
 import os
 
 # Telegram API Configuration
-API_ID = int(os.getenv("API_ID", "21800647"))
-API_HASH = os.getenv("API_HASH", "f088e630dbf4a16cb89830f2e411f6af")
+# Get your API_ID and API_HASH from https://my.telegram.org/auth
+API_ID = int(os.getenv("API_ID", "YOUR_API_ID_HERE"))
+API_HASH = os.getenv("API_HASH", "YOUR_API_HASH_HERE")
 
 # Smart Engine Key (Gemini API)
 SMART_KEY = os.getenv("SMART_KEY", "AIzaSyDNnl0LoTVJUJxRhGzVQhFpbubCfZVv6dA")

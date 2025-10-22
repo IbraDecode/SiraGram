@@ -7,7 +7,7 @@
         <item>light</item>
         <item>dark</item>
         <item>system</item>
-    </string-array></file><file path="/root/SiraGram/app/src/main/res/values/colors.xml" qualifiers=""><color name="electric_blue">#007BFF</color><color name="deep_black">#000000</color><color name="pure_white">#FFFFFF</color><color name="bottom_nav_color">@color/electric_blue</color></file><file path="/root/SiraGram/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">SiraGram</string><string name="splash_text">Built By Ibra Decode With Sira Community</string><string name="about_text">© Sira Community 2025 — Crafted with Care &amp; Smart Technology</string><string name="settings_footer">SiraGram Engine v2.0 – Seamless, Secure, Smart</string><string name="telegram_api_id">21800647</string><string name="telegram_api_hash">f088e630dbf4a16cb89830f2e411f6af</string><string name="telegram_app_title">SiraGram</string><string name="telegram_short_name">SiraGram</string></file><file path="/root/SiraGram/app/src/main/res/values/themes.xml" qualifiers=""><style name="Theme.SiraGram" parent="Theme.Material3.DayNight">
+    </string-array></file><file path="/root/SiraGram/app/src/main/res/values/colors.xml" qualifiers=""><color name="electric_blue">#007BFF</color><color name="deep_black">#000000</color><color name="pure_white">#FFFFFF</color><color name="bottom_nav_color">@color/electric_blue</color></file><file path="/root/SiraGram/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">SiraGram</string><string name="splash_text">Built By Ibra Decode With Sira Community</string><string name="about_text">© Sira Community 2025 — Crafted with Care &amp; Smart Technology</string><string name="settings_footer">SiraGram Engine v2.0 – Seamless, Secure, Smart</string><string name="telegram_api_id">21800647</string><string name="telegram_api_hash">f088e630dbf4a16cb89830f2e411f6af</string><string name="telegram_app_title">SiraGram</string><string name="telegram_short_name">SiraGram</string></file><file path="/root/SiraGram/app/src/main/res/values/themes.xml" qualifiers=""><style name="Theme.SiraGram" parent="Theme.Material3.Light">
         
         <item name="colorPrimary">@color/electric_blue</item>
         <item name="colorPrimaryVariant">@color/electric_blue</item>
@@ -19,12 +19,12 @@
         
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         
-        <item name="android:windowBackground">@color/deep_black</item>
-        <item name="android:textColorPrimary">@color/pure_white</item>
+        <item name="android:windowBackground">@color/pure_white</item>
+        <item name="android:textColorPrimary">@color/deep_black</item>
         <item name="android:textColorSecondary">@color/electric_blue</item>
     </style><style name="AppTheme" parent="Theme.SiraGram">
         
     </style><style name="SplashTheme" parent="Theme.SiraGram">
         <item name="android:windowBackground">@drawable/splash_background</item>
-        <item name="android:statusBarColor">@color/deep_black</item>
+        <item name="android:statusBarColor">@color/electric_blue</item>
     </style></file><file name="preferences" path="/root/SiraGram/app/src/main/res/xml/preferences.xml" qualifiers="" type="xml"/><file name="message_bubble" path="/root/SiraGram/app/src/main/res/drawable/message_bubble.xml" qualifiers="" type="drawable"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/root/SiraGram/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/root/SiraGram/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/root/SiraGram/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/root/SiraGram/app/build/generated/res/resValues/debug"/></dataSet><mergedItems/></merger>

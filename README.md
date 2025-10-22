@@ -24,10 +24,14 @@ A modern Telegram client for Android with smart features, built with Java/Kotlin
    pip install -r requirements.txt
    ```
 
-2. Set environment variables:
-   - `API_ID`: Telegram API ID
-   - `API_HASH`: Telegram API Hash
-   - `SMART_KEY`: Gemini API Key
+2. Get Telegram API credentials:
+   - Go to https://my.telegram.org/auth
+   - Log in and create an app to get API_ID and API_HASH
+
+3. Set environment variables:
+   - `API_ID`: Your Telegram API ID
+   - `API_HASH`: Your Telegram API Hash
+   - `SMART_KEY`: Gemini API Key (get from Google AI Studio)
 
 3. Run the server:
    ```bash

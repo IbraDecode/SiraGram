@@ -43,6 +43,7 @@ id nav_contacts
 id nav_explore
 id nav_home
 id nav_settings
+id otp_input
 id phone_input
 id send_button
 id send_otp_button
@@ -51,6 +52,7 @@ id setting_title
 id settings_recycler_view
 id splash_logo
 id splash_text
+id verify_otp_button
 layout activity_chat
 layout activity_explore
 layout activity_login

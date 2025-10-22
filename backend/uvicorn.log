@@ -1,0 +1,15 @@
+INFO:     Started server process [180626]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     64.227.177.25:54420 - "GET /auth/send_otp?phone=123 HTTP/1.1" 200 OK
+INFO:     114.10.156.64:57040 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     114.10.156.64:57040 - "GET / HTTP/1.1" 200 OK
+INFO:     114.10.156.64:57040 - "GET /api HTTP/1.1" 404 Not Found
+INFO:     114.10.156.64:57041 - "GET /auth/send_otp?phone=13313458919 HTTP/1.1" 200 OK
+INFO:     64.227.177.25:57336 - "GET /auth/send_otp?phone=13313458919 HTTP/1.1" 200 OK
+INFO:     64.227.177.25:59994 - "GET /auth/send_otp?phone=13313458919 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [180626]

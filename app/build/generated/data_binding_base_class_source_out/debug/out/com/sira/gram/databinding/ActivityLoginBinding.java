@@ -25,18 +25,27 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final LottieAnimationView loginAnimation;
 
   @NonNull
+  public final EditText otpInput;
+
+  @NonNull
   public final EditText phoneInput;
 
   @NonNull
   public final Button sendOtpButton;
 
+  @NonNull
+  public final Button verifyOtpButton;
+
   private ActivityLoginBinding(@NonNull LinearLayout rootView,
-      @NonNull LottieAnimationView loginAnimation, @NonNull EditText phoneInput,
-      @NonNull Button sendOtpButton) {
+      @NonNull LottieAnimationView loginAnimation, @NonNull EditText otpInput,
+      @NonNull EditText phoneInput, @NonNull Button sendOtpButton,
+      @NonNull Button verifyOtpButton) {
     this.rootView = rootView;
     this.loginAnimation = loginAnimation;
+    this.otpInput = otpInput;
     this.phoneInput = phoneInput;
     this.sendOtpButton = sendOtpButton;
+    this.verifyOtpButton = verifyOtpButton;
   }
 
   @Override
@@ -72,6 +81,12 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.otp_input;
+      EditText otpInput = ViewBindings.findChildViewById(rootView, id);
+      if (otpInput == null) {
+        break missingId;
+      }
+
       id = R.id.phone_input;
       EditText phoneInput = ViewBindings.findChildViewById(rootView, id);
       if (phoneInput == null) {
@@ -84,8 +99,14 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((LinearLayout) rootView, loginAnimation, phoneInput,
-          sendOtpButton);
+      id = R.id.verify_otp_button;
+      Button verifyOtpButton = ViewBindings.findChildViewById(rootView, id);
+      if (verifyOtpButton == null) {
+        break missingId;
+      }
+
+      return new ActivityLoginBinding((LinearLayout) rootView, loginAnimation, otpInput, phoneInput,
+          sendOtpButton, verifyOtpButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

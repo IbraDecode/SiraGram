@@ -1,13 +1,12 @@
 from fastapi import APIRouter, HTTPException
-from pyrogram import Client
 from telegram_client import client
 
 router = APIRouter()
 
-@router.post("/send_otp")
+@router.get("/send_otp")
 async def send_otp(phone: str):
     try:
-        await client.send_code(phone)
+        await client.send_code_request(phone)
         return {"message": "OTP sent"}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))

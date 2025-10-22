@@ -3565,6 +3565,7 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id otp_input
 id outline
 id outward
 id overshoot
@@ -3729,6 +3730,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id verify_otp_button
 id vertical_only
 id view_offset_helper
 id view_transition

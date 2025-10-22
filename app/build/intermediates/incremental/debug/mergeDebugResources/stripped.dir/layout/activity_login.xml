@@ -40,6 +40,25 @@
         android:layout_height="wrap_content"
         android:text="Send OTP"
         android:backgroundTint="@color/electric_blue"
+        android:textColor="@color/deep_black"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/otp_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP code"
+        android:inputType="number"
+        android:textColor="@color/pure_white"
+        android:backgroundTint="@color/electric_blue"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/verify_otp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:backgroundTint="@color/electric_blue"
         android:textColor="@color/deep_black" />
 
 </LinearLayout>

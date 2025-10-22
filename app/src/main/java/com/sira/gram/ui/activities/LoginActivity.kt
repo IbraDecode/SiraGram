@@ -20,24 +20,46 @@ class LoginActivity : AppCompatActivity() {
         apiService = ApiService()
 
         val phoneInput: EditText = findViewById(R.id.phone_input)
+        val otpInput: EditText = findViewById(R.id.otp_input)
         val sendOtpButton: Button = findViewById(R.id.send_otp_button)
+        val verifyOtpButton: Button = findViewById(R.id.verify_otp_button)
 
         sendOtpButton.setOnClickListener {
             val phone = phoneInput.text.toString()
             if (phone.isNotEmpty()) {
                 // Call API to send OTP
                 apiService.sendOtp(phone) { success ->
-                    if (success) {
-                        Toast.makeText(this, "OTP sent", Toast.LENGTH_SHORT).show()
-                        // Proceed to verify OTP, for now go to MainActivity
-                        startActivity(Intent(this, MainActivity::class.java))
-                        finish()
-                    } else {
-                        Toast.makeText(this, "Failed to send OTP", Toast.LENGTH_SHORT).show()
+                    runOnUiThread {
+                        if (success) {
+                            Toast.makeText(this@LoginActivity, "OTP sent", Toast.LENGTH_SHORT).show()
+                        } else {
+                            Toast.makeText(this@LoginActivity, "Failed to send OTP", Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
             } else {
                 Toast.makeText(this, "Enter phone number", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        verifyOtpButton.setOnClickListener {
+            val phone = phoneInput.text.toString()
+            val code = otpInput.text.toString()
+            if (phone.isNotEmpty() && code.isNotEmpty()) {
+                // Call API to verify OTP
+                apiService.verifyOtp(phone, code) { success ->
+                    runOnUiThread {
+                        if (success) {
+                            Toast.makeText(this@LoginActivity, "Logged in", Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                            finish()
+                        } else {
+                            Toast.makeText(this@LoginActivity, "Failed to verify OTP", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
+            } else {
+                Toast.makeText(this, "Enter phone and OTP", Toast.LENGTH_SHORT).show()
             }
         }
     }

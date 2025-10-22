@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml:2:1-55:12
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.databinding:viewbinding:8.1.4] /root/.gradle/caches/transforms-3/9456afe1f786ed252430bc0153c74e75/transformed/jetified-viewbinding-8.1.4/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.preference:preference-ktx:1.2.0] /root/.gradle/caches/transforms-3/43466cfabd5f6ea25e8df3c2b9ef2e88/transformed/jetified-preference-ktx-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.11.0] /root/.gradle/caches/transforms-3/486e23dacdbde43ae894e4a5af88064a/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
@@ -95,9 +95,13 @@ uses-permission#android.permission.VIBRATE
 ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:11:5-66
 	android:name
 		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:11:22-63
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:12:5-77
+	android:name
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:12:22-74
 application
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:13:5-53:19
-INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml:13:5-53:19
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:14:5-56:19
+INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml:14:5-56:19
 MERGED from [com.google.android.material:material:1.11.0] /root/.gradle/caches/transforms-3/486e23dacdbde43ae894e4a5af88064a/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /root/.gradle/caches/transforms-3/486e23dacdbde43ae894e4a5af88064a/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /root/.gradle/caches/transforms-3/5cfd8d5cb4403da18402d4dd81ff1785/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -120,70 +124,74 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /root/.gradle/caches/transf
 MERGED from [androidx.startup:startup-runtime:1.1.1] /root/.gradle/caches/transforms-3/fd07b9e5047f57c5e72d26b982d2a94c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
 		INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml
+	android:requestLegacyExternalStorage
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:21:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/a8839a1cec5dcf6ecf5205d86b16ef03/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:18:9-41
 	android:icon
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:15:9-50
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:17:9-50
 	android:allowBackup
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:17:9-40
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:19:9-40
 	android:usesCleartextTraffic
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:18:9-44
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:20:9-44
+	android:name
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:15:9-32
 activity#com.sira.gram.ui.activities.SplashActivity
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:20:9-27:20
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:23:9-30:20
 	android:exported
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:22:13-36
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:21:13-57
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:24:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:23:13-26:29
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:26:13-29:29
 action#android.intent.action.MAIN
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:28:27-74
 activity#com.sira.gram.ui.activities.LoginActivity
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:29:9-31:40
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:31:13-37
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:30:13-56
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:33:13-56
 activity#com.sira.gram.ui.activities.MainActivity
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:33:9-35:40
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:35:13-37
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:34:13-55
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:37:13-55
 activity#com.sira.gram.ui.activities.ChatActivity
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:37:9-39:40
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:40:9-42:40
 	android:exported
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:39:13-37
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:38:13-55
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:41:13-55
 activity#com.sira.gram.ui.activities.ExploreActivity
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:41:9-43:40
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:43:13-37
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:42:13-58
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:45:13-58
 activity#com.sira.gram.ui.activities.SettingsActivity
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:45:9-47:40
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:48:9-50:40
 	android:exported
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:47:13-37
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:46:13-59
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:49:13-59
 meta-data#com.airbnb.lottie.LOTTIE_CACHE_DIR
-ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:49:9-51:44
+ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:52:9-54:44
 	android:value
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:51:13-41
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:54:13-41
 	android:name
-		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:50:13-62
+		ADDED from /root/SiraGram/app/src/main/AndroidManifest.xml:53:13-62
 uses-sdk
 INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /root/SiraGram/app/src/main/AndroidManifest.xml
